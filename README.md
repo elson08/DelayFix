@@ -6,4 +6,4 @@ A mod that removes item use delay for Minecraft Bedrock 1.16.100.
 
 ## Installation
 1. Download the latest `.dll` from [Releases](https://github.com/yourusername/ItemUseDelayFix/releases)
-2. Inject with a injector of your choosing
+2. Inject with an injector of your choosing
