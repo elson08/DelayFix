@@ -21,8 +21,9 @@ void entry(LPVOID lParam) {
     }
 
     std::this_thread::sleep_for(std::chrono::seconds(5));
-    Logger::shutdown();
     FreeLibraryAndExitThread(static_cast<HMODULE>(lParam), 0);
+    
+    Logger::shutdown();
 }
 
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved) {
