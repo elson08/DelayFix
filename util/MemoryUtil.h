@@ -5,9 +5,9 @@
 class MemoryUtils {
 public:
     static inline void nopBytes(void* dst, unsigned int size) {
-        DWORD oldprotect;
-        VirtualProtect(dst, size, PAGE_EXECUTE_READWRITE, &oldprotect);
+        DWORD oldProtect;
+        VirtualProtect(dst, size, PAGE_EXECUTE_READWRITE, &oldProtect);
         memset(dst, 0x90, size);
-        VirtualProtect(dst, size, oldprotect, &oldprotect);
+        VirtualProtect(dst, size, oldProtect, &oldProtect);
     }
 };
